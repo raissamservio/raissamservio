@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @raissamservio
 - 👀 I’m interested in movies
-- 🌱 I’m currently learning on a DIO bootcamp
-- 📫 How to reach me raissaservio@gmail.com
+- 🐍 I’m currently learning Python
+- 📫 Don't try to reach me
 
 <!---
 raissamservio/raissamservio is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
