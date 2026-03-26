@@ -1,0 +1,246 @@
+/*
+ * RAISSA SERVIO — Custom CSS
+ * Cole no editor de CSS do Hostinger Website Builder
+ * Settings > Website Settings > Custom Code > CSS
+ *
+ * Melhorias: tipografia, cards de serviços, botões, depoimentos, footer
+ */
+
+/* ===============================
+   1. TIPOGRAFIA GLOBAL
+   =============================== */
+
+/* Remove o texto justificado que cria espaçamentos estranhos */
+p, li {
+  text-align: left !important;
+  line-height: 1.78 !important;
+  color: #374151;
+}
+
+h1 {
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
+  line-height: 1.15 !important;
+}
+
+h2 {
+  font-weight: 800 !important;
+  font-size: 2.2rem !important;
+  letter-spacing: -0.03em !important;
+  color: #111827 !important;
+}
+
+h3 {
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  letter-spacing: 0.02em !important;
+  text-transform: uppercase !important;
+}
+
+/* ===============================
+   2. HERO — LEGIBILIDADE
+   =============================== */
+
+/* Sombra de texto para melhor leitura sobre a imagem */
+section:first-of-type h1,
+section:first-of-type p,
+[class*="hero"] h1,
+[class*="hero"] p,
+[class*="banner"] h1,
+[class*="banner"] p {
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* ===============================
+   3. SEÇÃO DE SERVIÇOS — CARDS
+   =============================== */
+
+/* Remove a barra escura atrás do título dos serviços
+   e transforma cada item num card limpo com sombra */
+[class*="service"] > div,
+[class*="card"],
+[class*="item"] {
+  background: #ffffff !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08) !important;
+  padding: 32px 24px !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+  border: 1px solid #f0f0f5 !important;
+}
+
+[class*="service"] > div:hover,
+[class*="card"]:hover,
+[class*="item"]:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.13) !important;
+}
+
+/* Corrige os títulos dos serviços — remove fundo escuro e centraliza */
+[class*="service"] h3,
+[class*="service"] h4,
+[class*="card"] h3,
+[class*="card"] h4 {
+  background: none !important;
+  color: #111827 !important;
+  padding: 0 !important;
+  margin-bottom: 12px !important;
+  text-align: center !important;
+}
+
+/* Centraliza ícone dos serviços */
+[class*="service"] img,
+[class*="card"] img {
+  display: block !important;
+  margin: 0 auto 20px auto !important;
+}
+
+/* ===============================
+   4. BOTÕES
+   =============================== */
+
+/* Botão primário (ex: "Conheça meu trabalho", "Vamos conversar?") */
+a[href*="portf"],
+a[href*="sobre"],
+a[href*="contato"],
+button,
+[class*="btn"],
+[class*="button"] {
+  border-radius: 50px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.03em !important;
+  transition: all 0.2s ease !important;
+  padding: 14px 32px !important;
+}
+
+[class*="btn"]:hover,
+[class*="button"]:hover,
+button:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18) !important;
+}
+
+/* ===============================
+   5. SEÇÃO DE DEPOIMENTOS
+   =============================== */
+
+/* Melhora legibilidade do texto dos depoimentos */
+[class*="testimonial"] p,
+[class*="review"] p,
+[class*="depoimento"] p {
+  font-size: 0.97rem !important;
+  line-height: 1.8 !important;
+  font-style: italic !important;
+  color: #e5e7eb !important;
+  text-align: left !important;
+}
+
+/* Nome e cargo nos depoimentos */
+[class*="testimonial"] strong,
+[class*="testimonial"] b,
+[class*="review"] strong {
+  display: block !important;
+  margin-top: 16px !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  color: #ffffff !important;
+}
+
+/* Estrelas — destaque em amarelo */
+[class*="star"],
+[class*="rating"] {
+  color: #FBBF24 !important;
+  font-size: 1.2rem !important;
+  letter-spacing: 0.1em !important;
+}
+
+/* Foto dos depoimentos — arredondada e com borda */
+[class*="testimonial"] img,
+[class*="review"] img {
+  border-radius: 50% !important;
+  border: 3px solid #ffffff !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
+  width: 64px !important;
+  height: 64px !important;
+  object-fit: cover !important;
+}
+
+/* ===============================
+   6. FOOTER / CONTATO
+   =============================== */
+
+[class*="footer"],
+footer {
+  padding: 48px 24px !important;
+}
+
+[class*="footer"] a,
+footer a {
+  transition: color 0.2s ease, opacity 0.2s ease !important;
+}
+
+[class*="footer"] a:hover,
+footer a:hover {
+  opacity: 0.75 !important;
+}
+
+/* Ícones de redes sociais — aumenta área de toque */
+[class*="social"] a,
+[class*="footer"] a[href*="instagram"],
+[class*="footer"] a[href*="linkedin"],
+[class*="footer"] a[href*="behance"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  background: rgba(255,255,255,0.1) !important;
+  transition: background 0.2s ease, transform 0.2s ease !important;
+}
+
+[class*="social"] a:hover,
+[class*="footer"] a[href*="instagram"]:hover,
+[class*="footer"] a[href*="linkedin"]:hover,
+[class*="footer"] a[href*="behance"]:hover {
+  background: rgba(255,255,255,0.22) !important;
+  transform: scale(1.1) !important;
+}
+
+/* ===============================
+   7. ESPAÇAMENTO E SEÇÕES
+   =============================== */
+
+/* Garante espaçamento respeitoso entre seções */
+section {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+}
+
+/* Melhora o título "Serviços" — adiciona linha decorativa */
+h2[class*="title"],
+section > h2:first-child {
+  position: relative !important;
+  display: inline-block !important;
+  margin-bottom: 48px !important;
+}
+
+/* ===============================
+   8. RESPONSIVO — MOBILE
+   =============================== */
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.7rem !important;
+  }
+
+  section {
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+  }
+
+  [class*="service"] > div,
+  [class*="card"],
+  [class*="item"] {
+    padding: 24px 16px !important;
+  }
+}
